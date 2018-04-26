@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		4A3F5D8C208A5D130089F51B /* CategoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A3F5D8B208A5D130089F51B /* CategoryCell.swift */; };
+		4A49A6EA209160EC00325B60 /* ProductCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A49A6E9209160EC00325B60 /* ProductCell.swift */; };
 		4AAF20A42089CD3E00B7C385 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AAF20A32089CD3E00B7C385 /* AppDelegate.swift */; };
 		4AAF20A62089CD3E00B7C385 /* CategoriesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AAF20A52089CD3E00B7C385 /* CategoriesVC.swift */; };
 		4AAF20A92089CD3E00B7C385 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4AAF20A72089CD3E00B7C385 /* Main.storyboard */; };
@@ -28,6 +29,7 @@
 
 /* Begin PBXFileReference section */
 		4A3F5D8B208A5D130089F51B /* CategoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCell.swift; sourceTree = "<group>"; };
+		4A49A6E9209160EC00325B60 /* ProductCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCell.swift; sourceTree = "<group>"; };
 		4AAF20A02089CD3E00B7C385 /* coder-swag.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "coder-swag.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4AAF20A32089CD3E00B7C385 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4AAF20A52089CD3E00B7C385 /* CategoriesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesVC.swift; sourceTree = "<group>"; };
@@ -77,6 +79,7 @@
 			isa = PBXGroup;
 			children = (
 				4A3F5D8B208A5D130089F51B /* CategoryCell.swift */,
+				4A49A6E9209160EC00325B60 /* ProductCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -225,6 +228,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4AAF20A62089CD3E00B7C385 /* CategoriesVC.swift in Sources */,
+				4A49A6EA209160EC00325B60 /* ProductCell.swift in Sources */,
 				4AAF20A42089CD3E00B7C385 /* AppDelegate.swift in Sources */,
 				4A3F5D8C208A5D130089F51B /* CategoryCell.swift in Sources */,
 			);
