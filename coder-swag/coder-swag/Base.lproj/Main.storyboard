@@ -28,22 +28,22 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="6AP-cL-U4y">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="6AP-cL-U4y">
                                 <rect key="frame" x="0.0" y="66" width="375" height="537"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="130" id="809-xv-Wah" customClass="CategoryCell" customModule="coder_swag" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="375" height="130"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="CategoryCell" rowHeight="134" id="809-xv-Wah" customClass="CategoryCell" customModule="coder_swag" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="134"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="809-xv-Wah" id="Hhz-dc-aXT">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="129.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="134"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="digital" translatesAutoresizingMaskIntoConstraints="NO" id="rzJ-bA-zTJ">
-                                                    <rect key="frame" x="0.0" y="0.0" width="375" height="129.5"/>
+                                                    <rect key="frame" x="0.0" y="3" width="375" height="128"/>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="HOODIES" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S1z-oL-Bid">
-                                                    <rect key="frame" x="126.5" y="51.5" width="122" height="27"/>
+                                                    <rect key="frame" x="126.5" y="53.5" width="122" height="27"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="122" id="Icm-8m-fsx"/>
                                                         <constraint firstAttribute="height" constant="27" id="qEO-5T-PEw"/>
@@ -54,10 +54,10 @@
                                                 </label>
                                             </subviews>
                                             <constraints>
+                                                <constraint firstAttribute="bottom" secondItem="rzJ-bA-zTJ" secondAttribute="bottom" constant="3" id="7eX-Rm-n5m"/>
                                                 <constraint firstAttribute="trailing" secondItem="rzJ-bA-zTJ" secondAttribute="trailing" id="9ur-7g-8g6"/>
                                                 <constraint firstItem="S1z-oL-Bid" firstAttribute="centerX" secondItem="Hhz-dc-aXT" secondAttribute="centerX" id="H36-Td-Mu3"/>
-                                                <constraint firstItem="rzJ-bA-zTJ" firstAttribute="top" secondItem="Hhz-dc-aXT" secondAttribute="top" id="Qs9-Hx-tOL"/>
-                                                <constraint firstAttribute="bottom" secondItem="rzJ-bA-zTJ" secondAttribute="bottom" id="T2a-Ce-C81"/>
+                                                <constraint firstItem="rzJ-bA-zTJ" firstAttribute="top" secondItem="Hhz-dc-aXT" secondAttribute="top" constant="3" id="Leh-68-uE5"/>
                                                 <constraint firstItem="S1z-oL-Bid" firstAttribute="centerY" secondItem="Hhz-dc-aXT" secondAttribute="centerY" id="dZ0-pR-l5u"/>
                                                 <constraint firstItem="rzJ-bA-zTJ" firstAttribute="leading" secondItem="Hhz-dc-aXT" secondAttribute="leading" id="tm6-cP-r3E"/>
                                             </constraints>
@@ -82,7 +82,7 @@
                     </view>
                     <navigationItem key="navigationItem" title="CODER SWAG" id="aNJ-8c-Suc"/>
                     <connections>
-                        <outlet property="categoryTable" destination="6AP-cL-U4y" id="hf2-MB-uqE"/>
+                        <outlet property="categoryTable" destination="6AP-cL-U4y" id="YpW-5M-F9X"/>
                         <segue destination="57n-dm-kTC" kind="show" id="wqH-xO-jiB"/>
                     </connections>
                 </viewController>
