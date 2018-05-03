@@ -83,17 +83,17 @@
                     <navigationItem key="navigationItem" title="CODER SWAG" id="aNJ-8c-Suc"/>
                     <connections>
                         <outlet property="categoryTable" destination="6AP-cL-U4y" id="YpW-5M-F9X"/>
-                        <segue destination="57n-dm-kTC" kind="show" id="wqH-xO-jiB"/>
+                        <segue destination="57n-dm-kTC" kind="show" identifier="ProductsVC" id="wqH-xO-jiB"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="909.60000000000002" y="688.60569715142435"/>
         </scene>
-        <!--View Controller-->
+        <!--ProductsVC-->
         <scene sceneID="PyH-tG-oN2">
             <objects>
-                <viewController id="57n-dm-kTC" sceneMemberID="viewController">
+                <viewController id="57n-dm-kTC" customClass="ProductsVC" customModule="coder_swag" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="KwL-dJ-hAc"/>
                         <viewControllerLayoutGuide type="bottom" id="t9z-gv-jFH"/>
@@ -122,7 +122,7 @@
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="7de-iM-OMA" customClass="ProductCell" customModule="coder_swag" customModuleProvider="target">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ProductCell" id="7de-iM-OMA" customClass="ProductCell" customModule="coder_swag" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="144" height="261"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
@@ -170,9 +170,9 @@
                                             <constraint firstItem="7ey-xm-Lbh" firstAttribute="leading" secondItem="7de-iM-OMA" secondAttribute="leadingMargin" id="xic-B3-RPc"/>
                                         </constraints>
                                         <connections>
-                                            <outlet property="productImage" destination="dqh-gT-SNE" id="ypr-2G-u0P"/>
-                                            <outlet property="productPrice" destination="ktj-Lq-HWL" id="iwB-vI-kEs"/>
-                                            <outlet property="productTitle" destination="7ey-xm-Lbh" id="0TU-GX-oao"/>
+                                            <outlet property="productImage" destination="dqh-gT-SNE" id="2qZ-WP-oij"/>
+                                            <outlet property="productPrice" destination="ktj-Lq-HWL" id="W7D-Ud-gak"/>
+                                            <outlet property="productTitle" destination="7ey-xm-Lbh" id="FSj-NZ-YmA"/>
                                         </connections>
                                     </collectionViewCell>
                                 </cells>
@@ -188,6 +188,9 @@
                             <constraint firstItem="t9z-gv-jFH" firstAttribute="top" secondItem="rxa-xF-li2" secondAttribute="bottom" id="dZL-Bw-NOv"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="productsCollection" destination="rxa-xF-li2" id="weJ-Yo-zUQ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PGC-a5-emF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
